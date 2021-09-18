@@ -4,11 +4,7 @@ const app = express();
 
 global.__basedir = __dirname;
 
-var corsOptions = {
-  origin: "http://localhost:8081"
-};
-
-app.use(cors(corsOptions));
+app.use(cors());
 
 const initRoutes = require("./src/routes");
 
